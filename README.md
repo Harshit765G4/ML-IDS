@@ -18,34 +18,30 @@ Steps :-
 
 -> We have chossen multiple attacks for the dataset | we have chosen these attacks on the basic of what type of protocols it uses also which port it targets
 -> run these all these commands on attack machine and used the command provided at last to capture the attack traffic after performing the attack
-.
-.
-.
-.
--> SYN Flood
-sudo hping3 -S -p 80 --flood 192.168.100.4
+
+-> SYN Flood  -  sudo hping3 -S -p 80 --flood 192.168.100.4
 
 
 
    
 
--> UDP Flood
-sudo hping3 --udp -p 53 --flood 192.168.100.4
+-> UDP Flood  -  sudo hping3 --udp -p 53 --flood 192.168.100.4
 
 
 
   
 
--> ICMP Flood
-sudo hping3 -1 --flood 192.168.100.4
+-> ICMP Flood  -  sudo hping3 -1 --flood 192.168.100.4
 
 
 
   
 
-->  Nmap Scans
-🔸 Normal TCP Connect Scan -> nmap -sT 192.168.100.4
-🔸 Aggressive Scan with OS and Version Detection -> nmap -A -T4 192.168.100.4
+->  Nmap Scans  - 🔸 Normal TCP Connect Scan -> nmap -sT 192.168.100.4
+ 
+ 
+ 
+-->  🔸 Aggressive Scan with OS and Version Detection -> nmap -A -T4 192.168.100.4
 
 
 
