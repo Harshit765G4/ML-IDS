@@ -20,13 +20,13 @@ A smart, real-time, flow-based Intrusion Detection System (IDS) that uses **Mach
 
 ## ⚙️ Project Architecture
 
-[Attacker VM] ←🧠→ [Victim VM]
-↓ ↑
-[Traffic Capture via tcpdump / Wireshark]
-↓
-[CICFlowMeter → CSV Flows]
-↓
-[Preprocessing + ML Model Training]
-↓
+[Attacker VM] ←🧠→ [Victim VM]  
+       ↓ ↑  
+[Traffic Capture via tcpdump / Wireshark]  
+       ↓  
+[CICFlowMeter → CSV Flows]  
+       ↓  
+[Preprocessing + ML Model Training]  
+       ↓  
 [Flask Web App for Prediction]
 
